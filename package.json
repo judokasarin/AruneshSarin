@@ -1,9 +1,10 @@
 {
-  "name": "nextjs",
-  "version": "4.0.0",
+  "name": "mysite",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@material-ui/core": "latest",
+    "@material-ui/icons": "^4.11.2",
     "clsx": "latest",
     "next": "latest",
     "prop-types": "latest",
