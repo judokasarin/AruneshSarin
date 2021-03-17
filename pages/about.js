@@ -18,9 +18,7 @@ export default function About() {
           Go to the main page
         </Button>
 
-        <Button variant="contained" color="primary" component={Link} naked href="/hell">
-          Go to the hell
-        </Button>
+    
         <ProTip />
         <Copyright />
       </Box>

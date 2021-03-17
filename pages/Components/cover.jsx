@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
 headerText : {
         color : 'white',
         textAlign: 'center',
-        margin:'20vh auto 1em',
+        margin:'10vh auto 0em',
         padding: '0 1em',
         maxWidth:'42rem',
         lineHeight: '1.2',
@@ -22,7 +22,7 @@ headerText : {
     introText : {
             fontSize: '1.25em',
             transform: 'skewY(-11deg)',
-            margin: '0em auto 10em',
+            margin: '0em auto 5em',
             textAlign: 'center',
             background: '#fff',
             color: '#003',

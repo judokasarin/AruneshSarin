@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
           transformOrigin: '50% 0',
           outline: '1px solid transparent',
           
-          backgroundImage: 'linear-gradient(45deg, #654ea3, #eaafc8)',
+          backgroundImage: 'linear-gradient(-135deg, #007, #003)',
           backfaceVisibility: 'hidden',
     
         }

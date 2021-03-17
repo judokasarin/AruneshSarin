@@ -1,5 +1,7 @@
 import { makeStyles } from '@material-ui/styles';
 import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
 
 const useStyles = makeStyles((theme) => ({
     diagonalBox: {
@@ -17,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
           transform: 'skewY(-11deg)',
           transformOrigin: '50% 0',
           outline: '1px solid transparent',
+          
           backgroundImage: 'linear-gradient(45deg, #654ea3, #eaafc8)',
           backfaceVisibility: 'hidden',
     
@@ -39,19 +42,32 @@ const useStyles = makeStyles((theme) => ({
         margin: '0 0 0.5em',
         fontWeight: '900',
     },
+    ContentText : {
+        color : 'white',
+        fontSize:'1.25em',
+        margin: '0',
+        lineHeight: '1.5',
+    },
+    image :{
+        height: '20vh',
+        width: '20vw',
+    }
 }));
 
-const Experience =() =>{
+const About =() =>{
 const classes = useStyles();
-    return(<div>
+    return(
     <div className={classes.diagonalBox}>
-        <div className={classes.contentBox}> 
+    <div className={classes.contentBox}> 
         <Typography variant="h2"  color="text.secondary" gutterBottom className={classes.headerText}>
-        Experience
-        </Typography>
+            About Me
+        </Typography>  
+        <Typography variant="subtitle1"  color="text.secondary" gutterBottom className={classes.ContentText} >
+            Experienced Software Engineer with a demonstrated history of working in the information technology and services industry with a passion to make web applications.  
+        </Typography> 
     </div>
     </div>
-    </div>
+    
 )};
 
-export default Experience;
+export default About;

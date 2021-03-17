@@ -33,7 +33,8 @@ const useStyles = makeStyles((theme) => ({
             transform: 'skewY(-11deg)',
             transformOrigin: '50% 0',
             outline: '1px solid transparent',
-            backgroundImage: 'linear-gradient(-135deg, #007, #003)',
+            backgroundImage: 'linear-gradient(-135deg, #ff0084, #33001b)',
+           
             backfaceVisibility: 'hidden',
       
           }
@@ -58,6 +59,11 @@ const useStyles = makeStyles((theme) => ({
 
 const Projects = () => {
     const classes = useStyles();
+
+  const openlink=(url) => {
+    window.open(url);
+     
+    };
            
     return(
       <div className={classes.diagonalBox}>
@@ -65,7 +71,7 @@ const Projects = () => {
           <Typography variant="h2" gutterBottom className={classes.headerText}>
             Projects
           </Typography>
-          <Container>
+          
             <Grid container
               spacing={3} 
               direction="row"
@@ -91,10 +97,10 @@ const Projects = () => {
                   </CardContent>
                 </CardActionArea>
                 <CardActions>
-                  <Button size="small" color="primary" variant="outlined">
+                  <Button size="small" color="primary" variant="contained" onClick={()=>{openlink(projects.liveLink)}} >
                     Live Demo
                   </Button>
-                  <Button size="small" color="primary" variant="outlined">
+                  <Button size="small" color="primary" variant="contained" onClick={()=>{openlink(projects.gitLink)}} >
                     Source Code
                   </Button>
                 </CardActions>
@@ -103,7 +109,7 @@ const Projects = () => {
                     
           ))}
                 </Grid>
-              </Container>
+              
               </div>
     </div>
              

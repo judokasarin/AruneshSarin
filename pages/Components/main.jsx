@@ -3,6 +3,7 @@ import Cover from './cover'
 import Projects from  './projects'
 import Skills from './skills'
 import Experience from './experience'
+import About from './about'
 
 
 const Main = () => {
@@ -11,9 +12,11 @@ const Main = () => {
         <div>Myapp</div>
         <Navbar/> 
         <Cover/> 
+        <About />
+        <Projects/>
         <Skills />
         <Experience />
-        <Projects/>
+        
         </div>
     )
 };
